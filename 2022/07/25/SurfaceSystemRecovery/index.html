@@ -1,0 +1,1211 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Everett Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="According to many Microsoft Surface users, the operating system easily gets crashed. So how to handle the issue? The tutorial will show you 3 ways.    Warnings:  1. The following content involved in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The ultimate tutorial of Microsoft Surface recovery.">
+<meta property="og:url" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/index.html">
+<meta property="og:site_name" content="lzj20021216 presents blog">
+<meta property="og:description" content="According to many Microsoft Surface users, the operating system easily gets crashed. So how to handle the issue? The tutorial will show you 3 ways.    Warnings:  1. The following content involved in">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings1.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-System.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-Recovery.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ChooseAnOption.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/InstallMethod.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/AdditionalSettingsPage.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/CustomizeAdditionalSettings.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ConfirmPage.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Taskbar.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Run.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer3.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page1.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Installer/Setup.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/DownloadPage.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/img/CreateARecoveryDrive2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/img/CreateARecoveryDrive3.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/CopyFiles.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/UEFI-Password.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/UEFI-BootConfiguration2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/UEFI-Exit2.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/SelectLanguage.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/KeyboardLayout.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/ChooseAnOption.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/RecoverFromADrive.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Bitlocker.png">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/RecoveryOptions.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/ConfirmPage.jpg">
+<meta property="og:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/SurfaceBook-Recovery.png">
+<meta property="article:published_time" content="2022-07-25T05:52:50.000Z">
+<meta property="article:modified_time" content="2022-07-27T11:17:13.363Z">
+<meta property="article:author" content="Everett Lee">
+<meta property="article:tag" content="Surface-SystemRecovery">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+  
+  
+  
+  <title>The ultimate tutorial of Microsoft Surface recovery. - lzj20021216 presents blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/iconfont_earth/iconfont.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.lzj20021216.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>lzj20021216 presents blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-diqiu"></i>
+                Languages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="http://lzj20021216.github.io">
+                    
+                    English (United States)
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="http://lzj20021216.github.io/zh_CN/">
+                    
+                    简体中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="http://lzj20021216.github.io/zh_TW/">
+                    
+                    繁體中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="http://lzj20021216.github.io/ko_KR/">
+                    
+                    한국어
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="http://lzj20021216.github.io/ja_JP/">
+                    
+                    日本語
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/Post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="The ultimate tutorial of Microsoft Surface recovery."></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-07-25 13:52" pubdate>
+          July 25, 2022 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          7.1k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          60 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">The ultimate tutorial of Microsoft Surface recovery.</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p><font size=4>
+According to many Microsoft Surface users, the operating system easily gets crashed. So how to handle the issue? The tutorial will show you 3 ways.
+</font></p>
+
+<p class="note note-warning"><font size=3>
+Warnings: <br/><br/>
+1. The following content involved in this tutorial is for <b>reference only</b>. And for <b>the content of core technology</b>, please refer to <b>the official Microsoft docs</b>. <br/><br/>
+2. NEVER make a step over while reading the tutorial, you should read them step by step. <br/><br/>
+3. Before you take any of the steps below, make sure you <b>WILL NOT remove the usb flash disk while the system is recovering</b>, <b>cut off the power supply</b>, <b>do a force-shutdown by holding the power button</b>. <br/>
+Besides, make sure <b>you have backed up all your important files to a safe space.</b> <br/></br>
+4. No matter that whether your device are currently working well, if you have forgotten your Bitlocker key, donot follow this tutorial.<br/><br/>
+5. For official Microsoft docs, visit <u><a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1">Restore or reset Surface for Windows</a></u>. And do not read any of the following content in this tutorial.
+</font></p><br/>
+
+<p><font size=6>Method1</font></p>
+<p><font size=3>Recover your device with built-in Windows Recovery function</font></p>
+<br/>
+
+<p class="note note-primary">
+Warning: <br/><br/>Make sure that <b>your device is not running Windows 10 Version 1803</b>.<br/><br/>To identify your current Windows version, press <b>Windows Logo key</b> and <b>R</b> at the same time, then type <b>Winver</b> in the text field and click <b>OK</b> button or press <b>Enter</b>.<br/>The marked area shows the system version.<br/><br/>For <b>Version 1803</b> users, follow <a href="#method2"><u>Method 2</u></a> or <a href="#method3"><u>Method 3</u></a> below.
+</p><br/>
+
+<div class="imgWinver">
+   <img src="img/Windows10Rec/Winver.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgWinver{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p><font size=4><b>Windows 10</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+<li>Open Settings app and click “Update & Security” label.</li><br/>
+
+<div class="imgRecoverySettings1">
+   <img src="img/Windows10Rec/RecoverySettings1.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Click Recovery label and then click Get started under Reset this PC label.</li> <br/>
+
+<div class="imgRecoverySettings2">
+   <img src="img/Windows10Rec/RecoverySettings2.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Continue the steps by reading the following content as Windows 11.</li>
+
+</ul>
+</font></p>
+
+<p><font size=4><b>Windows 11</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+
+<li>Open the Settings app, then find and click Recovery.</li><br/>
+
+<div class="imgSettingsApp-System">
+   <img src="img/Windows11Rec/SettingsApp-System.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-System{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Click Reset PC button right inside Reset this PC label.</li><br/>
+
+<div class="imgSettingsApp-Recovery">
+   <img src="img/Windows11Rec/SettingsApp-Recovery.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-Recovery{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Choose a way of recovering.</li><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/Windows11Rec/ChooseAnOption.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgChooseAnOption{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">Which are personal files?<br/>Personal files include those in the user folders including <b>Desktop</b> <b>Documents</b> <b>Downloads</b> <b>Music</b> <b>Pictures</b> <b>Videos</b></p>
+
+<li>Choose a reinstalling method. Typically, <b>Local reinstall</b> is recommend for it is faster.</li><br/>
+
+<div class="imgInstallMethod">
+   <img src="img/Windows11Rec/InstallMethod.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgInstallMethod{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-warning">
+Warning: <br/>
+If it asks you for a Windows Installation Media, you can choose the <b>Cloud download</b> option or use a Surface Recovery Image with <a href="#method3"><u>Method 3</u></a>.</p>
+
+<li>If you prefer default settings, just click <b>Next</b>.</li><br/>
+
+<div class="imgAdditionalSettingsPage">
+   <img src="img/Windows11Rec/AdditionalSettingsPage.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>If you want to change them, click <b>Change settings</b> label, then make the changes and click the <b>Confirm</b> button.</li><br/>
+
+<div class="imgCustomizeAdditionalSettings">
+   <img src="img/Windows11Rec/CustomizeAdditionalSettings.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Make sure that you have all the important files on your device have been backed up to a safe place and click <b>Reset</b> button when you are ready to go.</li><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/Windows11Rec/ConfirmPage.png" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Your device will restart several times and finally get a brand-new copy of Windows 11.</li>
+
+</ul>
+
+<p></font></p></p>
+<p><a name="#method2"><font size=6>Method2</font></a></p>
+<p><font size=4>
+
+<p><font size=3>Get the operating system repaired in a quick way using a Windows iso file</font></p>
+
+<p class="note note-primary">Some versions of Windows 10 will get broken after using the built-in Windows Recovery function.</p>
+
+<p class="note note-warning">Make sure that your device is connected to the Internet.<br/>The method works on both <b>Windows 10</b> and <b>Windows 11</b></p>
+
+<ul type="square">
+
+<li>Open the <b>Windows Explorer</b> by clicking its icon on the task bar.</li><br/>
+
+<div class="imgTaskbar">
+   <img src="img/Installer/Taskbar.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgTaskbar{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">
+If you cannot open it by clicking, press <b>Ctrl</b> <b>Alt</b> and <b>Del</b> at the same time and then click <b>Task Manager</b>.<br/>In Task Manager window, click <b>File</b> and click <b>Create new task</b>.<br/>Input <b>explorer</b> in the text field and click <b>OK</b> button or press <b>Enter</b>.
+</p>
+
+<div class="imgRun">
+   <img src="img/Installer/Run.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRun{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Enter <b>Local Disk(C:)</b> and Enter <b>Program Files</b> folder.</li><br/>
+
+<div class="imgExplorer">
+   <img src="img/Installer/Explorer.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Enter <b>Internet Explorer</b> folder.</li><br/>
+
+<div class="imgExplorer2">
+   <img src="img/Installer/Explorer2.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Find and run <b>iexplorer.exe</b></li><br/>
+
+<div class="imgExplorer3">
+   <img src="img/Installer/Explorer3.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer3{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Open the link <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/software-download/windows10ISO/"><u>Download Windows 10 Disc Image (ISO File)</u></a> or <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/software-download/windows11"><u>Download Windows 11</u></a> in Internet Explorer</u>.</li><br/>
+
+<div class="imgDownloadWindows10Page1">
+   <img src="img/Installer/DownloadWindows10Page1.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<div class="imgDownloadWindows10Page2">
+   <img src="img/Installer/DownloadWindows10Page2.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">Choose <b>64-bit image</b> to download.</p></ul>
+
+<li>Mount the iso file with a double-click and run <b>Setup.exe</b></li><br/>
+
+<div class="imgSetup">
+   <img src="img/Installer/Setup.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSetup{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">Choose keep everything.<br/><br/>Your device will restart several times.</p></ul>
+
+<p></font></p></p>
+<p><a name="#method3"><font size=6>Method3</font></a></p>
+<p><font size=3>Recover your device with Surface Recovery Image</font></p>
+
+<p class="note note-primary"><font size=4>
+Requirement: <br/><br/>
+1. Make sure you have internet connection and a PC running Windows 10 or above. <br/><br/>
+2. Make sure you have a usb flash disk with the capacity of at least 16GB. (This is up to the image you download. Some of the recovery images only require the space under 8GB, and some ones also require it over 16GB.) <br/>
+</font></p>
+
+<p><font size=4>
+<ul type="square">
+<li>Open the link in your browser: <a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/surfacerecoveryimage"><u>Surface Recovery Image Download</u></a></li><br/>
+
+<li>Follow the instructions on the page to download your image.</li><br/>
+
+<p><img src="img/DownloadPage.jpg" srcset="/img/loading.gif" lazyload/><br/></p>
+<li>While downloading, insert your usb flash drive and type "Create a recovery drive" in the search bar. </li><br/>
+
+<div class="imgCreateARecoveryDrive">
+   <img src="img/CreateARecoveryDrive.jpg" srcset="/img/loading.gif" lazyload/>
+
+   <style>
+       .imgCreateARecoveryDrive{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Unselect <b>Back up system files to the recovery drive.</b> and then click <b>Next</b>.<br/>Select the drive you want to use as the recovery drive and then click <b>Next</b>.<br/>
+Hold on and wait for the process to finish.</li>
+
+<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/img/CreateARecoveryDrive2.jpg" srcset="/img/loading.gif" lazyload></div><div class="group-image-wrap"><img src="/img/CreateARecoveryDrive3.jpg" srcset="/img/loading.gif" lazyload></div></div><div class="group-image-row"></div></div>
+
+<li>When the download process completed, click to open it, then copy all the files in it to the recovery drive you have created.</li><br/>
+
+<div class="imgCopyFiles">
+   <img src="img/CopyFiles.png" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgCopyFiles{
+        text-align:center;
+    }
+</style>
+
+</ul>
+</font></p>
+
+<p class="note note-primary"><font size=3>
+If it warns that duplicate files exist, choose the replace option.
+</font></p>
+
+<ul type="square">
+
+<li><p><font size=4>When your Surface device is fully-shutdown, insert the recovery drive and hold <b>Power Button</b> and <b>Volumn Up Button</b> at the same time until it loads to Surface UEFI.
+<div class="imgPwd">
+   <img src="img/UEFI-Password.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgPwd{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<p class="note note-warning">Warnings: <br/>If you used to set a UEFI password, use it to get full Surface UEFI access.<br/>If you forgot it and your device can not boot up Windows, contact Microsoft Support agents for help.<br/>If you forgot it but are lucky enough to have set USB drives as your first boot order, you can just skip the step.</p>
+
+<li>In Surface UEFI, select <b>Boot configuration</b></li>
+label on the left, and drag <b>USB Storage</b> upon <b>Windows Boot Manager</b><br/><br/>
+
+<div class="imgBottConfiguration2">
+   <img src="img/UEFI-BootConfiguration2.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBottConfiguration2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<p class="note note-primary">
+Make sure <b>Enable Boot Configuration Lock</b> is disabled, just like which is shown in the picture above.
+</p>
+
+<li>
+Click <b>Exit</b> label on the left and then click <b>Restart Now</b> button. <br/><br/>
+
+<div class="imgExit2">
+   <img src="img/UEFI-Exit2.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgExit2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+Your device will automatically boot to the recovery drive.<br/>Select your language and keyboard layout. <br/><br/>
+
+<div class="imgSelectLanguage">
+   <img src="img/SelectLanguage.jpg" srcset="/img/loading.gif" lazyload/>
+</div><br/>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<div class="imgKeyboardLayout">
+   <img src="img/KeyboardLayout.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+The available languages depend on the region you purchased your Surface device.</p><br/>
+
+</li>
+
+<li>
+Choose Troubleshoot option.<br/><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/ChooseAnOption.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgChooseAnOption{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+Then select Recover from a drive.<br/><br/>
+
+<div class="imgRecoverFromADrive">
+   <img src="img/RecoverFromADrive.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoverFromADrive{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+If you do not see the option, here are the probable reasons and the solutions:<br/><br/>
+1. Something was wrong when you made the recovery drive, just remake it by following the steps mentioned above.<br/><br/>
+2. Some USB drives cannot be used as a recovery drive for they cannot be recognized by Surface devices even though they are USB 3.0 ones. You need to replace it with other one.<br/><br/>
+<del>I suggest you choose the Kingston DataTraveler 100 G3.</del> <br/><br/>
+3. Some online blogs may skip the step of |Create a recovery drive| and just format the recovery drive as FAT32 and then copy the recovery files into it straight. It does work sometimes, but many people had gotten trapped on booting from the drive. So, the method should not be taken.
+</p></li><br/>
+
+<li>
+You will see the similar page if you have enabled the Bitlocker function on your device. And you need the unlock key to complete the recovery. <br/><br/>
+
+<div class="imgBitlocker">
+   <img src="img/Bitlocker.png" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBitlocker{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">In general, it has been stored in your Microsoft account. Just open the link on your screen on your other devices to get it back.</p></li><br/>
+
+<li>
+There are two available options: <b>Just remove my files</b> and <b>Full clean the drive</b>. <b>Just remove my files</b> option offers a faster recovery speed but will not clean the drive completely. Choose <b>Full clean the drive</b> if you will not keep the device yourself after the recovery so that your previous person files would not be recovered by others.<br/><br/> 
+
+<div class="imgRecoveryOptions">
+   <img src="img/RecoveryOptions.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoveryOptions{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+Before the recovery starts, make sure again that you have backed up all your important files on the device as it cannot be terminated while processing. Click Recover button when you are ready.<br/><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/ConfirmPage.jpg" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgConfirmPage{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+Your device will look like this.<br/><br/>
+
+<div class="imgSurfaceBook-Recovery">
+   <img src="img/SurfaceBook-Recovery.png" srcset="/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSurfaceBook-Recovery{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<li>
+While recovering, it will ask whether you want to clear the TPM. Typically, you can choose to clear it.
+</li><br/>
+
+<li>
+Your device may reboot several times until it enters Out-of-box experience (OOBE) settings page.
+</li>
+
+</ul>
+</font></p>
+
+<p class="note note">Comming soon: Method 4 and FAQs.</p>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Surface-SystemRecovery/">#Surface-SystemRecovery</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>The ultimate tutorial of Microsoft Surface recovery.</div>
+      <div>http://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Everett Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>July 25, 2022</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>Licensed under</div>
+        <div>
+          
+            CC BY-SA 4.0
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.5.11/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"twikoo-commit-service-5afcb62dbe","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+              Fluid.plugins.imageCaption(imgSelector);
+              Fluid.plugins.fancyBox(imgSelector);
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
