@@ -1,0 +1,1236 @@
+
+
+<!DOCTYPE html>
+<html lang="ja-JP" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/ja_JP/img/fluid.png">
+  <link rel="icon" href="/ja_JP/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Everett Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  記事は機械で翻訳されています。読みやすくするために、元の記事を参照してください：The ultimate tut">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Microsoft Surfaceリカバリの究極のチュートリアル">
+<meta property="og:url" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/index.html">
+<meta property="og:site_name" content="lzj20021216 presents ブログ">
+<meta property="og:description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  記事は機械で翻訳されています。読みやすくするために、元の記事を参照してください：The ultimate tut">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings1.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-System.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-Recovery.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ChooseAnOption.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/InstallMethod.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/AdditionalSettingsPage.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/CustomizeAdditionalSettings.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ConfirmPage.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Taskbar.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Run.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer3.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page1.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Installer/Setup.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/DownloadPage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive3.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CopyFiles.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/UEFI-Password.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/UEFI-BootConfiguration2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/UEFI-Exit2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/SelectLanguage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/KeyboardLayout.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/ChooseAnOption.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/RecoverFromADrive.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Bitlocker.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/RecoveryOptions.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/ConfirmPage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/SurfaceBook-Recovery.png">
+<meta property="article:published_time" content="2022-07-25T05:52:50.000Z">
+<meta property="article:modified_time" content="2022-07-31T05:10:26.241Z">
+<meta property="article:author" content="Everett Lee">
+<meta property="article:tag" content="Surface-SystemRecovery">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+  
+  
+  
+  <title>Microsoft Surfaceリカバリの究極のチュートリアル - lzj20021216 presents ブログ</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/ja_JP/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/ja_JP/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/ja_JP/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/ja_JP/css/iconfont_earth/iconfont.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"lzj20021216.github.io","root":"/ja_JP/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/ja_JP/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/ja_JP/js/utils.js" ></script>
+  <script  src="/ja_JP/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/ja_JP/">
+      <strong>lzj20021216 presents ブログ</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ja_JP/">
+                <i class="iconfont icon-home-fill"></i>
+                ホーム
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ja_JP/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                アーカイブ
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ja_JP/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                カテゴリ
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ja_JP/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                タグ
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ja_JP/about/">
+                <i class="iconfont icon-user-fill"></i>
+                プロフィール
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-diqiu"></i>
+                言語設定
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io">
+                    
+                    English (United States)
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_CN/">
+                    
+                    简体中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_TW/">
+                    
+                    繁體中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ko_KR/">
+                    
+                    한국어
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ja_JP/">
+                    
+                    日本語
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/ja_JP/img/Post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Microsoft Surfaceリカバリの究極のチュートリアル"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-07-25 13:52" pubdate>
+          2022年7月25日 午後
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          5.3k 単語
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          44 分
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Microsoft Surfaceリカバリの究極のチュートリアル</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p class="note note-primary"><font size=2>The article is translated by machine, for better reading experience, see the original one: <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/>
+
+<p class="note note-primary"><font size=2>記事は機械で翻訳されています。読みやすくするために、元の記事を参照してください：<a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/><br/>
+
+<p><font size=4>
+多くの Microsoft Surface ユーザーによると、オペレーティング システムは簡単にクラッシュします。では、問題をどのように処理しますか？チュートリアルでは、3 つの方法を紹介します。
+</font></p>
+
+<p class="note note-warning"><font size=3>
+警告: <br/><br/>
+1. このチュートリアルに含まれる次の内容は、<b>参照のみ</b>です。 <b>コア テクノロジの内容</b>については、<b>Microsoft の公式ドキュメント</b>を参照してください。 <br/><br/>
+2. チュートリアルを読んでいる間は、一歩一歩進んではいけません。ステップバイステップで読む必要があります。 <br/><br/>
+3. 以下の手順を実行する前に、<b>システムの回復中は USB フラッシュ ディスクを取り外さないでください</b>、<b>電源を切る</b>、<b>電源ボタンを長押しして強制シャットダウンを行います</b>。 <br/>
+さらに、<b>すべての重要なファイルを安全な場所にバックアップしたことを確認してください。</b> <br/></br>
+4. デバイスが現在正常に動作しているかどうかに関係なく、Bitlocker キーを忘れた場合は、このチュートリアルに従わないでください。<br/><br/>
+5. Microsoft の公式ドキュメントについては、次の URL にアクセスしてください：<u><a target="_blank" rel="noopener" href="https://support.microsoft.com/ja-jp/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1">Surface for Windows を復元またはリセットする</a></u>。 また、このチュートリアルの次の内容は読まないでください。
+</font></p><br/>
+
+<p><font size=6>方法1</font></p>
+<p><font size=3>組み込みのWindows回復機能でデバイスを回復する</font></p>
+<br/>
+
+<p class="note note-primary">
+警告: <br/><br/><b>お使いのデバイスが Windows 10 バージョン 1803 を実行していない</b>ことを確認してください。<br/><br/>現在の Windows バージョンを確認するには、<b>Windows を押してくださいロゴ キー</b>と <b>R</b> を同時に入力し、テキスト フィールドに <b>Winver</b> と入力して <b>OK</b> ボタンをクリックするか、<b> を押します。 Enter</b>。<br/>マークされた領域はシステム バージョンを示します。<br/><br/><b>バージョン 1803</b> ユーザーの場合は、<a href="#method2"><u >方法 2</u></a> または以下の <a href="#method3"><u>方法 3</u></a>。
+</p><br/>
+
+<div class="imgWinver">
+   <img src="img/Windows10Rec/Winver.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgWinver{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p><font size=4><b>Windows 10 ユーザー</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+<li>設定アプリを開き、「更新とセキュリティ」ラベルをクリックします。</li><br/>
+
+<div class="imgRecoverySettings1">
+   <img src="img/Windows10Rec/RecoverySettings1.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>[リカバリラベル]をクリックし、[このPCラベルをリセット]の下の[開始]をクリックします。</li> <br/>
+
+<div class="imgRecoverySettings2">
+   <img src="img/Windows10Rec/RecoverySettings2.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>次の内容を Windows 11 ユーザーとして読んで、手順を続行します。</li>
+
+</ul>
+</font></p>
+
+<p><font size=4><b>Windows 11 ユーザー</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+
+<li>設定アプリを開き、[リカバリ]を見つけてクリックします。</li><br/>
+
+<div class="imgSettingsApp-System">
+   <img src="img/Windows11Rec/SettingsApp-System.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-System{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>[この PC をリセット] ラベルのすぐ内側にある [PC をリセット] ボタンをクリックします。</li><br/>
+
+<div class="imgSettingsApp-Recovery">
+   <img src="img/Windows11Rec/SettingsApp-Recovery.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-Recovery{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>回復する方法を選択してください。</li><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/Windows11Rec/ChooseAnOption.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgChooseAnOption{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">個人用ファイルはどれですか？<br/>個人用ファイルには、<b>デスクトップ</b><b>ドキュメント</b><b>ダウンロード</b><b>音楽</b>などのユーザーフォルダ内のファイルが含まれます<b>写真</b><b>ビデオ</b></p>
+
+<li>再インストール方法を選択します。通常、<b>ローカル再インストール</b>をお勧めします。その方が高速です。</li><br/>
+
+<div class="imgInstallMethod">
+   <img src="img/Windows11Rec/InstallMethod.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgInstallMethod{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-warning">
+警告：<br/>
+Windowsインストールメディアを要求された場合は、<b>クラウドダウンロード</ b>オプションを選択するか、<ahref="#method3"><u>方法3でSurfaceリカバリイメージを使用できます。</u></a>.</p>
+
+<li>デフォルト設定を使用する場合は、<b>[次へ]</b> をクリックしてください。</li><br/>
+
+<div class="imgAdditionalSettingsPage">
+   <img src="img/Windows11Rec/AdditionalSettingsPage.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>変更する場合は、[<b>設定の変更</b>] ラベルをクリックし、変更を加えて [<b>確認</b>] ボタンをクリックします。</li><br/>
+
+<div class="imgCustomizeAdditionalSettings">
+   <img src="img/Windows11Rec/CustomizeAdditionalSettings.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>デバイス上のすべての重要なファイルが安全な場所にバックアップされていることを確認し、準備が整ったら [<b>リセット</b>] ボタンをクリックします。</li><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/Windows11Rec/ConfirmPage.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>デバイスは数回再起動し、最終的にWindows11の新しいコピーを取得します。</li>
+
+</ul>
+
+<p></font></p></p>
+<p><a name="#method2"><font size=6>方法2</font></a></p>
+<p><font size=4>
+
+<p><font size=3>WindowsISOファイルを使用してオペレーティングシステムをすばやく修復します</font></p>
+
+<p class="note note-primary">Windows 10の一部のバージョンは、組み込みのWindows回復機能を使用した後に壊れます。</p>
+
+<p class="note note-warning">デバイスがインターネットに接続されていることを確認してください。<br/>この方法は、<b>Windows 10</b> と <b>Windows 11 の両方で機能します。</b></p>
+
+<ul type="square">
+
+<li>タスクバーのアイコンをクリックして、<b>Windowsエクスプローラー</b>を開きます。</li><br/>
+
+<div class="imgTaskbar">
+   <img src="img/Installer/Taskbar.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgTaskbar{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">
+クリックしても開けない場合は、<b>Ctrl</b> <b>Alt</b> と <b>Del</b> を同時に押して、<b>タスク マネージャー</b> をクリックします。 .<br/>[タスク マネージャー] ウィンドウで、[<b>ファイル</b>] をクリックし、[<b>新しいタスクの作成</b>] をクリックします。<br/>テキスト フィールドに <b>エクスプローラー</b> と入力し、 <b>OK</b> ボタンをクリックするか、<b>Enter</b> を押します。
+</p>
+
+<div class="imgRun">
+   <img src="img/Installer/Run.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRun{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b> Local Disk（C :) </ b>と入力し、次に<b> Program Files</b>フォルダと入力します。</li><br/>
+
+<div class="imgExplorer">
+   <img src="img/Installer/Explorer.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>Internet Explorer</b> フォルダに入ります。</li><br/>
+
+<div class="imgExplorer2">
+   <img src="img/Installer/Explorer2.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>ieexplorer.exe</b> を見つけて実行します</li><br/>
+
+<div class="imgExplorer3">
+   <img src="img/Installer/Explorer3.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer3{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>リンクを開く <a target="_blank" rel="noopener" href="https://www.microsoft.com/ja-jp/software-download/windows10ISO/"><u>Windows 10 のディスク イメージ (ISO ファイル) のダウンロード</u></a> or <a target="_blank" rel="noopener" href="https://www.microsoft.com/ja-jp/software-download/windows11"><u>Windows 11 をダウンロードする</u></a> InternetExplorerを使用</u>。</li><br/>
+
+<div class="imgDownloadWindows10Page1">
+   <img src="img/Installer/DownloadWindows10Page1.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<div class="imgDownloadWindows10Page2">
+   <img src="img/Installer/DownloadWindows10Page2.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">ダウンロードする<b>64ビットイメージ</b>を選択します。</p></ul>
+
+<li>ダブルクリックしてisoファイルをマウントし、<b> Setup.exe</b>を実行します。</li><br/>
+
+<div class="imgSetup">
+   <img src="img/Installer/Setup.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSetup{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">すべてを保持を選択します。<br/><br/>デバイスが数回再起動します。</p></ul>
+
+<p></font></p></p>
+<p><a name="#method3"><font size=6>方法3</font></a></p>
+<p><font size=3>SurfaceRecoveryImageを使用してデバイスを回復します</font></p>
+
+<p class="note note-primary"><font size=4>
+要件: <br/><br/>
+1. インターネット接続と、Windows 10 以降を実行している PC があることを確認します。 <br/><br/>
+2. 容量が 16GB 以上の USB 3.0 フラッシュ ディスクがあることを確認します。 (これはダウンロードするイメージ次第です。リカバリ イメージの中には、8GB 未満のスペースしか必要としないものもあれば、16GB 以上を必要とするものもあります。) <br/>
+</font></p>
+
+<p><font size=4>
+<ul type="square">
+<li>ブラウザでリンクを開きます：<a target="_blank" rel="noopener" href="https://support.microsoft.com/ja-jp/surfacerecoveryimage"><u>Surface 回復イメージのダウンロード</u></a></li><br/>
+
+<li>ページの指示に従って画像をダウンロードします。</li><br/>
+
+<p><img src="img/DownloadPage.jpg" srcset="/ja_JP/img/loading.gif" lazyload/><br/></p>
+<li>ダウンロード中に、USBフラッシュドライブを挿入し、検索バーに「リカバリドライブの作成」と入力します。</li><br/>
+
+<div class="imgCreateARecoveryDrive">
+   <img src="img/CreateARecoveryDrive.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+
+   <style>
+       .imgCreateARecoveryDrive{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>[<b>システムファイルをリカバリドライブにバックアップする</b>]の選択を解除し、[<b>次へ</b>]をクリックします。<br/>リカバリドライブとして使用するドライブを選択し、[<b>]をクリックします。次へ</b>。<br/>
+しばらく待って、プロセスが終了するのを待ちます。</li>
+
+<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive2.jpg" srcset="/ja_JP/img/loading.gif" lazyload></div><div class="group-image-wrap"><img src="/ja_JP/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive3.jpg" srcset="/ja_JP/img/loading.gif" lazyload></div></div><div class="group-image-row"></div></div>
+
+<li>ダウンロード プロセスが完了したら、クリックして開き、その中のすべてのファイルを作成した回復ドライブにコピーします。</li><br/>
+
+<div class="imgCopyFiles">
+   <img src="img/CopyFiles.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgCopyFiles{
+        text-align:center;
+    }
+</style>
+
+</ul>
+</font></p>
+
+<p class="note note-primary"><font size=3>
+重複ファイルが存在するという警告が表示された場合は、置換オプションを選択してください。
+</font></p>
+
+<ul type="square">
+
+<li><p><font size=4>Surfaceデバイスが完全にシャットダウンしたら、リカバリドライブを挿入し、SurfaceUEFIに読み込まれるまで<b>電源ボタン</b>と<b>音量大ボタン</b>を同時に押し続けます。
+<div class="imgPwd">
+   <img src="img/UEFI-Password.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgPwd{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<p class="note note-warning">警告: <br/>UEFI パスワードを設定していた場合は、それを使用して Surface UEFI に完全にアクセスしてください。<br/>パスワードを忘れてデバイスが Windows を起動できない場合は、Microsoft サポート担当者に連絡してください。<br/> />それを忘れたが、幸運にも最初の起動順序として USB ドライブを設定している場合は、この手順をスキップできます。</p>
+
+<li>Surface UEFI で、[<b>ブート構成</b>] を選択します</li>
+左側のラベルをクリックし、<b>Windows ブート マネージャーに <b>USB ストレージ</b> をドラッグします。</b><br/><br/>
+
+<div class="imgBottConfiguration2">
+   <img src="img/UEFI-BootConfiguration2.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBottConfiguration2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<p class="note note-primary">
+上の図に示すように、<b>ブート構成ロックを有効にする</b>が無効になっていることを確認してください。
+</p>
+
+<li>
+左側の[<b>終了</b>]ラベルをクリックしてから、[<b>今すぐ再起動</b>]ボタンをクリックします。<br/><br/>
+
+<div class="imgExit2">
+   <img src="img/UEFI-Exit2.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgExit2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+デバイスは自動的にリカバリドライブから起動します。<br/>言語とキーボードレイアウトを選択します。<br/><br/>
+
+<div class="imgSelectLanguage">
+   <img src="img/SelectLanguage.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div><br/>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<div class="imgKeyboardLayout">
+   <img src="img/KeyboardLayout.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+使用可能な言語は、Surfaceデバイスを購入した地域によって異なります。</p><br/>
+
+</li>
+
+<li>
+トラブルシューティングオプションを選択します。<br/><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/ChooseAnOption.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgChooseAnOption{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+次に、[ドライブから回復]を選択します。<br/><br/>
+
+<div class="imgRecoverFromADrive">
+   <img src="img/RecoverFromADrive.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoverFromADrive{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+オプションが表示されない場合は、考えられる理由と解決策を次に示します。<br/> <br/>
+1.リカバリドライブを作成したときに問題が発生しました。上記の手順に従って再作成してください。<br/><br/>
+2.一部のUSBドライブは、USB 3.0のものであっても、Surfaceデバイスで認識できないため、リカバリドライブとして使用できません。他のものと交換する必要があります。<br/><br/>
+<del> Kingston DataTraveler100G3を選択することをお勧めします。</del><br/> <br/>
+3.一部のオンラインブログでは、|リカバリドライブを作成する|の手順をスキップする場合があります。リカバリドライブをFAT32としてフォーマットしてから、リカバリファイルをそのままコピーします。それは時々動作しますが、多くの人々がドライブからの起動に閉じ込められていました。したがって、この方法をとるべきではありません。
+</p></li><br/>
+
+<li>
+デバイスで Bitlocker 機能を有効にしている場合は、同様のページが表示されます。また、復元を完了するにはロック解除キーが必要です。<br/><br/>
+
+<div class="imgBitlocker">
+   <img src="img/Bitlocker.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBitlocker{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">通常、Microsoftアカウントに保存されています。他のデバイスの画面でリンクを開くだけで、元に戻すことができます。</p></li><br/>
+
+<li>
+利用可能なオプションは2つあります。<b>ファイルを削除するだけ</b>と<b>ドライブを完全にクリーンアップする</b>です。 <b>ファイルを削除する</b>オプションを使用すると、回復速度が速くなりますが、ドライブが完全にクリーンアップされるわけではありません。以前の個人ファイルが他の人によって回復されないように、回復後にデバイスを自分で保持しない場合は、<b>ドライブを完全にクリーンアップする</b>を選択します。<br/><br/> 
+
+<div class="imgRecoveryOptions">
+   <img src="img/RecoveryOptions.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoveryOptions{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+リカバリを開始する前に、処理中に終了できないため、デバイス上のすべての重要なファイルをバックアップしたことを再度確認してください。準備ができたら、[回復]ボタンをクリックします。<br/><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/ConfirmPage.jpg" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgConfirmPage{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+デバイスは次のようになります。<br/><br/>
+
+<div class="imgSurfaceBook-Recovery">
+   <img src="img/SurfaceBook-Recovery.png" srcset="/ja_JP/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSurfaceBook-Recovery{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<li>
+お使いのデバイスは次のようになります。
+</li><br/>
+
+<li>
+デバイスは、Out-of-box Experience（OOBE）設定ページに入るまで数回再起動する場合があります。
+</li>
+
+</ul>
+</font></p>
+
+<p class="note note">近日公開: 方法4 と FAQ。</p>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/ja_JP/categories/Microsoft-Surface-%E3%83%98%E3%83%AB%E3%83%97-%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/" class="category-chain-item">Microsoft Surface ヘルプ ドキュメント</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/ja_JP/tags/Surface-SystemRecovery/">#Surface-SystemRecovery</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Microsoft Surfaceリカバリの究極のチュートリアル</div>
+      <div>http://lzj20021216.github.io/ja_JP/2022/07/25/SurfaceSystemRecovery/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>著者</div>
+          <div>Everett Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>作成日</div>
+          <div>2022年7月25日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>著作権</div>
+        <div>
+          
+            CC BY-SA 4.0
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.5.11/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"twikoo-commit-service-5afcb62dbe","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+              Fluid.plugins.imageCaption(imgSelector);
+              Fluid.plugins.fancyBox(imgSelector);
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;見出し</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">検索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">キーワード</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/ja_JP/js/events.js" ></script>
+<script  src="/ja_JP/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/ja_JP/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/ja_JP/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/ja_JP/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">ブログは JavaScript を有効にすると最適に機能します</div>
+  </noscript>
+</body>
+</html>

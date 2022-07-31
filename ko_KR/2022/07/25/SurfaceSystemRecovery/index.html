@@ -1,0 +1,1236 @@
+
+
+<!DOCTYPE html>
+<html lang="ko-KR" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/ko_KR/img/fluid.png">
+  <link rel="icon" href="/ko_KR/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Everett Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: The ultimate">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Microsoft Surface 장치 복구 궁극적인 자습서">
+<meta property="og:url" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/index.html">
+<meta property="og:site_name" content="lzj20021216 presents 블로그">
+<meta property="og:description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: The ultimate">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings1.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/RecoverySettings2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-System.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/SettingsApp-Recovery.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ChooseAnOption.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/InstallMethod.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/AdditionalSettingsPage.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/CustomizeAdditionalSettings.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows11Rec/ConfirmPage.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Taskbar.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Run.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Explorer3.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page1.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/DownloadWindows10Page2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Installer/Setup.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/DownloadPage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive3.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CopyFiles.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/UEFI-Password.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/UEFI-BootConfiguration2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/UEFI-Exit2.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/SelectLanguage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/KeyboardLayout.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/ChooseAnOption.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/RecoverFromADrive.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Bitlocker.png">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/RecoveryOptions.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/ConfirmPage.jpg">
+<meta property="og:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/SurfaceBook-Recovery.png">
+<meta property="article:published_time" content="2022-07-25T05:52:50.000Z">
+<meta property="article:modified_time" content="2022-07-31T05:10:43.374Z">
+<meta property="article:author" content="Everett Lee">
+<meta property="article:tag" content="Surface-SystemRecovery">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/img/Windows10Rec/Winver.jpg">
+  
+  
+  
+  <title>Microsoft Surface 장치 복구 궁극적인 자습서 - lzj20021216 presents 블로그</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/ko_KR/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/ko_KR/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/ko_KR/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/ko_KR/css/iconfont_earth/iconfont.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"lzj20021216.github.io","root":"/ko_KR/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/ko_KR/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/ko_KR/js/utils.js" ></script>
+  <script  src="/ko_KR/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/ko_KR/">
+      <strong>lzj20021216 presents 블로그</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/">
+                <i class="iconfont icon-home-fill"></i>
+                집
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                아카이브
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                카테고리
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                태그
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/about/">
+                <i class="iconfont icon-user-fill"></i>
+                대략
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-diqiu"></i>
+                언어
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io">
+                    
+                    English (United States)
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_CN/">
+                    
+                    简体中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_TW/">
+                    
+                    繁體中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ko_KR/">
+                    
+                    한국어
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ja_JP/">
+                    
+                    日本語
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/ko_KR/img/Post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Microsoft Surface 장치 복구 궁극적인 자습서"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-07-25 13:52" pubdate>
+          2022년 7월 25일 오후
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.4k 단어
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          38 분
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Microsoft Surface 장치 복구 궁극적인 자습서</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p class="note note-primary"><font size=2>The article is translated by machine, for better reading experience, see the original one: <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/>
+
+<p class="note note-primary"><font size=2>기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/><br/>
+
+<p><font size=4>
+많은 Microsoft Surface 사용자의 피드백에 따르면 Surface 운영 체제는 충돌하기 쉽습니다. 이 문제를 해결하는 방법은 무엇입니까? 이 튜토리얼에서는 3가지 방법을 알려줍니다.
+</font></p>
+
+<p class="note note-warning"><font size=3>
+경고: <br/><br/>
+1. 이 글의 내용은 <b>참고용</b>입니다. <b>핵심 기술</b>의 내용은 <b>Microsoft 공식 문서</b>를 참조하세요. <br/><br/>
+2. 이 기사의 방법을 읽을 때 단계를 따르고 문맥에서 벗어나지 마십시오. <br/><br/>
+3. 작동 중에는 <b>USB 플래시 드라이브를 분리</b>하거나, <b>AC 전원을 차단</b>하거나, 시스템 복구 중에 <b>강제 종료</b>하지 마십시오. <br/>
+또한 중요한 파일을 기기의 안전한 위치에 저장했는지<b>다시 확인하십시오. </b> <br/></br>
+4. Bitlocker 키를 잊어버린 경우 현재 장치가 정상적으로 부팅되는지 여부에 관계없이 이 문서를 읽지 마십시오. <br/><br/>
+5. 공식 Microsoft 설명서를 보려면 <u><a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de를 방문하십시오. -2e87-7ba3b45e0fb1">Windows용 Surface를 복원 또는 재설정</a></u>하고 현재 기사의 내용 읽기를 중지합니다.
+</font></p><br/>
+
+<p><font size=6>방법 1</font></p>
+<p><font size=3>Windows의 내장 시스템 재설정 기능 사용</font></p>
+<br/>
+
+<p class="note note-primary">
+경고: <br/><br/>기기가 현재 Windows 10 버전 1803이 아닌 버전을 실행 중인지 확인</b>하세요.<br/><br/>현재 Windows 버전을 확인하려면 <b를 누르십시오. >Windows 키</b> 및 <b>R 키</b>를 누르고 텍스트 상자에 <b>Winver</b>를 입력합니다. <b>확인</b> 버튼을 클릭하거나 <b>Enter 키</b>를 누르십시오.<br/>사진의 표시된 부분은 현재 시스템 버전입니다. <br/><br/><b>버전 1803</b> 사용자의 경우 <a href="#method2"><u>방법 2</u></a> 또는 <a href= "#method3"><u>방법 3</u></a>.
+</p><br/>
+
+<div class="imgWinver">
+   <img src="img/Windows10Rec/Winver.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgWinver{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p><font size=4><b>Windows 10 사용자</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+<li>설정 앱을 열고 "업데이트 및 보안" 탭을 누릅니다.</li><br/>
+
+<div class="imgRecoverySettings1">
+   <img src="img/Windows10Rec/RecoverySettings1.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>복구 탭을 클릭한 다음 이 PC 초기화 제목 아래에 있는 시작 버튼을 클릭합니다.</li> <br/>
+
+<div class="imgRecoverySettings2">
+   <img src="img/Windows10Rec/RecoverySettings2.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRecoverySettings2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>나머지 단계는 아래 <b>Windows 11 사용자</b>의 단계를 따릅니다.</li>
+
+</ul>
+</font></p>
+
+<p><font size=4><b>Windows 11 사용자</b></font></p>
+
+<p><font size=4>
+
+<ul type="square">
+
+<li>설정 앱을 열고 복구 옵션을 찾아서 누릅니다.</li><br/>
+
+<div class="imgSettingsApp-System">
+   <img src="img/Windows11Rec/SettingsApp-System.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-System{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>이 PC 재설정 레이블 아래에 있는 재설정 버튼을 클릭합니다.</li><br/>
+
+<div class="imgSettingsApp-Recovery">
+   <img src="img/Windows11Rec/SettingsApp-Recovery.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSettingsApp-Recovery{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>복구 방법을 선택하십시오.</li><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/Windows11Rec/ChooseAnOption.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgChooseAnOption{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">개인 파일에는 무엇이 포함되어 있습니까? <br/>개인 파일에는 <b>데스크톱 폴더</b> <b>문서 폴더</b> <b>다운로드 폴더</b> <b>음악 폴더</b> <b> 사진 폴더가 포함됩니다. b> 및 <b>동영상 폴더</b></p>
+
+<li>재설치 방법을 선택합니다. 일반에서 <b>로컬 재설치</b>를 선택하면 더 빠르게 복원됩니다. </li><br/>
+
+<div class="imgInstallMethod">
+   <img src="img/Windows11Rec/InstallMethod.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgInstallMethod{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-warning">
+경고: <br/>
+Windows 설치 미디어를 삽입하라는 메시지가 나타나면 <b>온라인으로 다운로드</b> 옵션을 선택하거나 <a href="#method3"><u>방법 3: 이 기사의 하단 </u></a>, 복구 이미지를 사용하여 장치를 복원하십시오. </p>
+
+<li>기본 설정이 마음에 들면 <b>다음</b>을 클릭하세요. </li><br/>
+
+<div class="imgAdditionalSettingsPage">
+   <img src="img/Windows11Rec/AdditionalSettingsPage.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>이 설정을 변경하려면 <b>설정 변경</b> 탭을 클릭하고 변경이 완료되면 <b>확인</b> 버튼을 클릭하십시오. </li><br/>
+
+<div class="imgCustomizeAdditionalSettings">
+   <img src="img/Windows11Rec/CustomizeAdditionalSettings.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>중요한 데이터를 백업했는지 확인한 다음 준비가 되면 <b>재설정</b> 버튼을 클릭하십시오. </li><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/Windows11Rec/ConfirmPage.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgAdditionalSettingsPage{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>기기가 몇 번 재부팅되면 새 Windows 사본이 제공됩니다. </li>
+
+</ul>
+
+<p></font></p></p>
+<p><a name="#method2"><font size=6>방법 2</font></a></p>
+<p><font size=4>
+
+<p><font size=3>공개 Windows 이미지 파일을 사용하여 신속하게 기기 복원</font></p>
+
+<p class="note note-primary">일부 Windows 10 버전에서는 시스템에 내장된 복구 기능을 사용한 후 시스템 손상이 발생할 수 있습니다. </p>
+
+<p class="note note-warning">기기가 인터넷에 연결되어 있는지 확인하세요. <br/>이 방법은 <b>Windows 10</b> 및 <b>Windows 11</b> 모두에서 작동합니다. </p>
+
+<ul type="사각형">
+
+<li>작업 표시줄에서 <b>Windows 탐색기</b>를 열려면 클릭하십시오.</li><br/>
+
+<div class="imgTaskbar">
+   <img src="img/Installer/Taskbar.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgTaskbar{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">
+열 수 없으면 <b>Ctrl</b> <b>Alt</b>와 <b>Del</b>을 동시에 누르고 <b>작업 관리자</b>를 클릭하십시오. <br/>작업 관리자 창에서 <b>파일 옵션</b>을 클릭한 다음 <b>새 작업 만들기</b>를 클릭하십시오. <br/>텍스트 상자에 <b>explorer</b>를 입력하고 <b>확인</b> 버튼을 클릭하거나 <b>Enter</b> 키를 누르십시오.
+</p>
+
+<div class="imgRun">
+   <img src="img/Installer/Run.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgRun{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>로컬 디스크(C:)</b>로 이동한 다음 <b>Program Files</b> 폴더로 이동합니다. </li><br/>
+
+<div class="imgExplorer">
+   <img src="img/Installer/Explorer.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>Internet Explorer</b> 폴더로 이동합니다. </li><br/>
+
+<div class="imgExplorer2">
+   <img src="img/Installer/Explorer2.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>iexplorer.exe</b>를 찾아 실행합니다. </li><br/>
+
+<div class="imgExplorer3">
+   <img src="img/Installer/Explorer3.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgExplorer3{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li>Internet Explorer에서 이 링크를 엽니다. <a target="_blank" rel="noopener" href="https://www.microsoft.com/ko-kr/software-download/windows10ISO/"><u>Windows 10 디스크 이미지 다운로드(ISO 파일)</u></a>. 또는 이 링크: <a target="_blank" rel="noopener" href="https://www.microsoft.com/ko-kr/software-download/windows11"><u>Windows 11 다운로드</u></a >.</li><br/>
+
+<div class="imgDownloadWindows10Page1">
+   <img src="img/Installer/DownloadWindows10Page1.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page1{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<div class="imgDownloadWindows10Page2">
+   <img src="img/Installer/DownloadWindows10Page2.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgDownloadWindows10Page2{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">다운로드<b>64비트</b>를 선택합니다. </p></ul>
+
+<li>iso 파일을 두 번 클릭하여 마운트하고 <b>Setup.exe</b>를 실행합니다. </li><br/>
+
+<div class="imgSetup">
+   <img src="img/Installer/Setup.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgSetup{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<p class="note note-primary">모든 항목을 유지하려면 옵션을 선택하십시오. <br/><br/>기기가 여러 번 재부팅됩니다. </p></ul>
+
+<p></font></p></p>
+<p><a name="#method3"><font size=6>방법3</font></a></p>
+<p><font size=3>Surface로 이미지 복원</font></p>
+
+<p class="note note-primary"><font size=4>
+요구 사항: <br/><br/>
+1. 다른 장치가 인터넷에 연결되어 있고 Windows 10 이상을 실행 중인지 확인하십시오. <br/><br/>
+2. 최소 16GB 용량의 USB 3.0 플래시 드라이브가 있는지 확인하십시오. (또는 다운로드하는 이미지 파일의 크기에 따라 다릅니다. 예를 들어 일부 이미지는 8GB 미만을 차지하는 반면 다른 이미지는 16GB를 초과합니다.) <br/>
+</font></p>
+
+<p><font size=4>
+<ul type="square">
+<li>브라우저에서 이 링크를 엽니다: <a target="_blank" rel="noopener" href="https://support.microsoft.com/ko-kr/surfacerecoveryimage"><u>Surface 복구 이미지 다운로드</u></a></li><br/>
+
+<li>페이지의 지침에 따라 다운로드하세요.</li><br/>
+
+<p><img src="img/DownloadPage.jpg" srcset="/ko_KR/img/loading.gif" lazyload/><br/></p>
+<li>이미지를 다운로드하는 동안 USB 드라이브를 삽입하고 검색 상자에 "복구 드라이브 만들기" 를 입력합니다.</li><br/>
+
+<div class="imgCreateARecoveryDrive">
+   <img src="img/CreateARecoveryDrive.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+
+   <style>
+       .imgCreateARecoveryDrive{
+        text-align:center;
+        }
+   </style>
+</div><br/>
+
+<li><b>시스템 파일 백업</b> 옵션을 선택 취소하고 <b>다음</b>을 클릭하십시오. <br/>복구 드라이브로 사용할 장치를 선택하고 <b>다음</b>을 클릭하십시오. <br/>
+빌드가 완료될 때까지 기다리십시오.</li>
+
+<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive2.jpg" srcset="/ko_KR/img/loading.gif" lazyload></div><div class="group-image-wrap"><img src="/ko_KR/2022/07/25/SurfaceSystemRecovery/img/CreateARecoveryDrive3.jpg" srcset="/ko_KR/img/loading.gif" lazyload></div></div><div class="group-image-row"></div></div>
+
+<li>다운로드한 복구 이미지를 열고 그 안에 있는 모든 파일을 완성된 복구 드라이브에 복사합니다.</li><br/>
+
+<div class="imgCopyFiles">
+   <img src="img/CopyFiles.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgCopyFiles{
+        text-align:center;
+    }
+</style>
+
+</ul>
+</font></p>
+
+<p class="note note-primary"><font size=3>
+같은 이름의 파일이 있다는 메시지가 나타나면 바꾸기를 클릭합니다.
+</font></p>
+
+<ul type="square">
+
+<li><p><font size=4>Surface를 종료하고 복구 드라이브를 삽입한 다음 Surface UEFI에 들어갈 때까지 <b>전원 키</b>와 <b>볼륨 업</b>을 동시에 길게 누릅니다.
+<div class="imgPwd">
+   <img src="img/UEFI-Password.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgPwd{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<p class="note note-warning">경고:<br/>UEFI 암호를 설정한 적이 있는 경우 암호 상자에 입력하여 전체 Surface UEFI 제어를 얻으십시오. <br/>비밀번호를 잊어버렸고 장치가 시스템에 정상적으로 진입할 수 없는 경우 Microsoft 고객 서비스에 도움을 요청하십시오. <br/>비밀번호를 잊어버렸지만 운이 좋게도 USB 부팅을 첫 번째 부팅 순서로 설정했다면 아래 UEFI 설정을 건너뛸 수 있습니다.</p>
+
+<li>Surface UEFI에서 <b>부팅 구성</b></li>을 선택합니다.
+그런 다음 <b>USB 저장소</b>를 처음으로 드래그합니다.<br/><br/>
+
+<div class="imgBottConfiguration2">
+   <img src="img/UEFI-BootConfiguration2.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBottConfiguration2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<p class="note note-primary">
+그림과 같이 <b>Enable Boot Configuration Lock</b> 옵션이 비활성화되어 있는지 확인합니다.
+</p>
+
+<li>
+왼쪽의 <b>종료</b> 옵션을 클릭한 다음 <b>지금 다시 시작</b> 버튼을 클릭하십시오.<br/><br/>
+
+<div class="imgExit2">
+   <img src="img/UEFI-Exit2.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgExit2{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+장치가 자동으로 복구 드라이브로 부팅됩니다. <br/>언어 및 키보드 레이아웃을 선택하십시오.<br/><br/>
+
+<div class="imgSelectLanguage">
+   <img src="img/SelectLanguage.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div><br/>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<div class="imgKeyboardLayout">
+   <img src="img/KeyboardLayout.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSelectLanguage{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+언어 선택 목록에서 사용할 수 있는 언어는 장치를 구입한 지역에 따라 다릅니다.</p><br/>
+
+</li>
+
+<li>
+문제 해결 옵션을 선택합니다.<br/><br/>
+
+<div class="imgChooseAnOption">
+   <img src="img/ChooseAnOption.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgChooseAnOption{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+그런 다음 Recover from a drive (드라이브에서 복구)를 선택합니다.<br/><br/>
+
+<div class="imgRecoverFromADrive">
+   <img src="img/RecoverFromADrive.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoverFromADrive{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">
+이 옵션이 표시되지 않는 경우 다음과 같은 몇 가지 가능한 원인과 해결 방법이 있습니다.<br/><br/>
+1. 생성된 복구 드라이브에 문제가 있습니다. 복구 드라이브 생성에 대한 위의 내용을 참조하여 새로 만드십시오. <br/><br/>
+2. 일부 USB 스틱은 USB 3.0과 호환되더라도 Surface 장치에서 인식되지 않기 때문에 복구 드라이브로 사용할 수 없습니다. USB 플래시 드라이브를 교체하고 다시 시작하십시오. <br/><br/>
+<del>Kingston DataTraveler 100 G3를 추천합니다.</del> <br/><br/>
+3. 인터넷의 일부 자습서에서는 |복구 실행기 만들기|를 건너뛰고 U 디스크를 FAT32 형식으로 직접 포맷하고 복구 파일을 복사합니다. 이것은 때때로 작동하지만 많은 사람들이 시도하고 시작하지 않는다는 것을 알게 됩니다.
+</p></li><br/>
+
+<li>
+장치에서 BitLocker를 활성화한 경우 아래 이미지와 유사한 인터페이스가 표시됩니다. 후속 복구 단계를 완료하려면 복구 키를 입력해야 합니다.<br/><br/>
+
+<div class="imgBitlocker">
+   <img src="img/Bitlocker.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgBitlocker{
+        text-align:center;
+    }
+</style>
+
+<p class="note note-primary">일반적으로 Microsoft 계정에 이미 저장되어 있습니다. 화면에 표시된 링크를 열고 키를 검색하기만 하면 됩니다.</p></li><br/>
+
+<li>
+<b>내 파일만 삭제</b> 및 <b>드라이브 완전 삭제</b>의 두 가지 옵션을 사용할 수 있습니다. <b>내 파일만 삭제</b> 옵션은 복원 속도가 더 빠르지만 디스크를 완전히 지우지는 않습니다. 복구 후 장치가 더 이상 보존되지 않으면 <b>를 선택하여 다른 사람이 하드 드라이브의 파일을 복구할 수 없도록 드라이브를 완전히 정리하십시오.</b> <br/><br/> 
+
+<div class="imgRecoveryOptions">
+   <img src="img/RecoveryOptions.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgRecoveryOptions{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+복구를 시작하기 전에 중요한 파일을 모두 저장했는지 다시 확인하세요. 복구 프로세스는 되돌릴 수 없습니다. 준비가 되면 <b>재개</b> 버튼을 클릭하십시오.<br/><br/>
+
+<div class="imgConfirmPage">
+   <img src="img/ConfirmPage.jpg" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgConfirmPage{
+        text-align:center;
+    }
+</style>
+
+</li><br/>
+
+<li>
+장치가 복원된 상태는 다음과 같습니다.<br/><br/>
+
+<div class="imgSurfaceBook-Recovery">
+   <img src="img/SurfaceBook-Recovery.png" srcset="/ko_KR/img/loading.gif" lazyload/>
+</div>
+
+<style>
+    .imgSurfaceBook-Recovery{
+        text-align:center;
+    }
+</style>
+</li><br/>
+
+<li>
+복구 프로세스 중에 TPM 설정을 지울 것인지 묻는 메시지가 표시됩니다. 일반적으로 지우기를 선택할 수 있습니다.
+</li><br/>
+
+<li>
+초기 설정(OOBE) 단계에 들어가기 전에 장치가 몇 번 재부팅됩니다.
+</li>
+
+</ul>
+</font></p>
+
+<p class="note note">계속 지켜봐 주세요: 방법 4 및 FAQ 수집 게시물</p>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/ko_KR/categories/Microsoft-Surface-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%AC%B8%EC%84%9C/" class="category-chain-item">Microsoft Surface 도움말 문서</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/ko_KR/tags/Surface-SystemRecovery/">#Surface-SystemRecovery</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Microsoft Surface 장치 복구 궁극적인 자습서</div>
+      <div>http://lzj20021216.github.io/ko_KR/2022/07/25/SurfaceSystemRecovery/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>작가</div>
+          <div>Everett Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>게시일</div>
+          <div>2022년 7월 25일</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>라이센스</div>
+        <div>
+          
+            CC BY-SA 4.0
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.5.11/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"twikoo-commit-service-5afcb62dbe","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+              Fluid.plugins.imageCaption(imgSelector);
+              Fluid.plugins.fancyBox(imgSelector);
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;목차</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">검색</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">예어</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/ko_KR/js/events.js" ></script>
+<script  src="/ko_KR/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/ko_KR/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/ko_KR/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/ko_KR/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">블로그는 JavaScript 가 활성화된 상태에서 가장 잘 작동합니다.</div>
+  </noscript>
+</body>
+</html>
