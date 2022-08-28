@@ -1,0 +1,785 @@
+
+
+<!DOCTYPE html>
+<html lang="ko-KR" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/ko_KR/img/BlogLogo.png">
+  <link rel="icon" href="/ko_KR/img/BlogLogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Everett Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: The ultimate">
+<meta property="og:type" content="article">
+<meta property="og:title" content="일반적인 Surface 하드웨어 문제 FAQ 모음">
+<meta property="og:url" content="http://lzj20021216.github.io/ko_KR/2022/08/02/SurfaceHardwareIssuesFAQ/index.html">
+<meta property="og:site_name" content="lzj20021216 presents 블로그">
+<meta property="og:description" content="The article is translated by machine, for better reading experience, see the original one: The ultimate tutorial of Microsoft Surface recovery  기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: The ultimate">
+<meta property="og:locale" content="ko_KR">
+<meta property="article:published_time" content="2022-08-02T10:16:20.000Z">
+<meta property="article:modified_time" content="2022-08-28T04:29:41.000Z">
+<meta property="article:author" content="Everett Lee">
+<meta property="article:tag" content="Microsoft Surafce">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>일반적인 Surface 하드웨어 문제 FAQ 모음 - lzj20021216 presents 블로그</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/ko_KR/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/ko_KR/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/ko_KR/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/ko_KR/css/iconfont_earth/iconfont.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"lzj20021216.github.io","root":"/ko_KR/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/ko_KR/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/ko_KR/js/utils.js" ></script>
+  <script  src="/ko_KR/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/ko_KR/">
+      <strong>lzj20021216 presents 블로그</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/">
+                <i class="iconfont icon-home-fill"></i>
+                집
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                아카이브
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                카테고리
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                태그
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/ko_KR/about/">
+                <i class="iconfont icon-user-fill"></i>
+                대략
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-diqiu"></i>
+                언어
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io">
+                    
+                    English (United States)
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_CN/">
+                    
+                    简体中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/zh_TW/">
+                    
+                    繁體中文
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ko_KR/">
+                    
+                    한국어
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="http://lzj20021216.github.io/ja_JP/">
+                    
+                    日本語
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/ko_KR/img/Post.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="일반적인 Surface 하드웨어 문제 FAQ 모음"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-08-02 18:16" pubdate>
+          2022년 8월 2일 오후
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.6k 단어
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          31 분
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">일반적인 Surface 하드웨어 문제 FAQ 모음</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p class="note note-primary"><font size=2>The article is translated by machine, for better reading experience, see the original one: <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/>
+
+<p class="note note-primary"><font size=2>기사는 기계로 번역되었습니다. 더 나은 읽기 경험을 위해 원본을 참조하세요: <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/ko_KR/2022/07/25/SurfaceSystemRecovery/"><u>The ultimate tutorial of Microsoft Surface recovery</u></a></font></p><br/><br/>
+
+
+<p><font size=4>
+Surface 장치를 사용하는 동안 몇 가지 하드웨어 문제가 발생할 수 있습니다. 이 기사는 문제의 FAQ 모음을 제공합니다.
+</font></p><br/>
+
+<p class="note note-warning"><font size=3>
+경고:<br/><br/>1. 이 문서는 일부 타사 솔루션을 제안할 수 있지만 특정 서비스 제공업체로 연결되지는 않습니다. <br/></br>2. 타사 서비스 제공업체를 선택하는 경우 중고 부품을 얻거나 부품을 도난당할 수 있으므로 신뢰할 수 있는지 확인하십시오.<br/><br/>3. 기사에 언급된 내용은 개인적인 경험을 기반으로 하며 문제를 해결하는 데 도움이 되는 몇 가지 가능한 방법만 제공합니다.<br/><br/>4. 공식 Microsoft 지원을 받으려면 <a target="_blank" rel="noopener" href="https://support.microsoft.com/ko-KR"><u>Microsoft 지원</u></a>을 방문하세요. 그리고 더 이상 기사를 읽지 마십시오.
+
+<p></font></p><br/><br/></p>
+<p><font size="6">FAQ List</font></p><br/>
+
+<style>
+    table th:nth-of-type(1){width:10%;}
+
+    table th:nth-of-type(2){width:30%;}
+
+    table th:nth-of-type(3){width:60%;}
+</style>
+
+<table>
+<thead>
+<tr>
+<th align="left">색인</th>
+<th align="left">의문</th>
+<th align="left">대답</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Q1</td>
+<td align="left">장치를 처음 부팅할 때 연결해야 합니까?</td>
+<td align="left">일반적으로 장치가 나오기 전에 완전히 충전되어 있기 때문에 전원 어댑터를 사용할 필요가 없습니다. 그러나 판매자는 짧은 시간에 제품을 판매하지 않을 수 있으며 배터리가 곧 소모됩니다. 새 장치를 시작할 수 없거나 배터리 부족 상태인 경우 연결하기만 하면 됩니다.</td>
+</tr>
+<tr>
+<td align="left">Q2</td>
+<td align="left">내 Surface는 어디에서 수리하나요?</td>
+<td align="left">공식 Microsoft 서비스를 보려면 <a href ="https://support.microsoft.com/ko-kr/surface/서비스를-받을-수-있도록-surface를-준비하는-방법-e6fe1f6a-c516-0cd5-5a96-0377d82e7fc5"><u>서비스를 받을 수 있도록 Surface를 준비하는 방법</u></a> . 만료된 보증 장치에 대해 더 저렴한 가격으로 타사 서비스를 선택할 수도 있습니다.</td>
+</tr>
+<tr>
+<td align="left">Q3</td>
+<td align="left">내 Surface Pro 4에 화면 깜박임 및 화면 떨림 문제가 있습니다.</td>
+<td align="left">문제는 삼성의 설계 결함이다. 또한 Microsoft는 화면에 대해 연장된 보증 기간을 제공합니다. <a target="_blank" rel="noopener" href="https://support.microsoft.com/ko-kr/surface/surface-pro-4-화면이-깜박이거나-뒤섞임-e48e8b60-0426-4de8-5a58-0a8f5a72a5c4"><u>Surface Pro 4 화면이 깜박이거나 뒤섞임</u></a> 자세한 내용이나 <del>교체 서비스</del>. 그러나 지금까지 Surface Pro 4 장치의 모든 보증이 만료되었습니다. 공식 Microsoft 수리 서비스를 보려면 <a target="_blank" rel="noopener" href="https://support.microsoft.com/ko-kr/surface/보증-기간이-만료되거나-손상된-surface-서비스-받기-08312d65-7d7d-5438-2f85-92c8b0a605ac"><u>보증 기간이 만료되거나 손상된 Surface 서비스 받기</u></a> 또한 타사 서비스 제공업체를 찾아 LG에서 제공한 발급된 화면을 교체할 수 있습니다. 더 싼 가격. 그러나 많은 사용자가 LG를 교체했지만 여전히 동일한 문제에 직면했습니다. 좋은 소식은 같은 문제를 겪고 있는 유저들에 따라 Surface Pro(5th)의 화면을 교체하면 문제가 완전히 해결된다는 것입니다.</td>
+</tr>
+<tr>
+<td align="left">Q4</td>
+<td align="left">Surface Laptop 3의 화면이 깜박거리거나 금이 갑니다.</td>
+<td align="left">소수의 사용자가 문제를 보고했습니다. <a href ="https://support.microsoft.com/ko-kr/surface/서비스를-받을-수-있도록-surface를-준비하는-방법-e6fe1f6a-c516-0cd5-5a96-0377d82e7fc5"><u>서비스를 받을 수 있도록 Surface를 준비하는 방법</u></a></td>
+</tr>
+<tr>
+<td align="left">Q5</td>
+<td align="left">내 Surface 장치에 부풀어 오른 배터리와 번인 화면이 있습니다.</td>
+<td align="left">기기가 아직 보증 기간 내에 있는 경우 기기를 무료로 수리할 수 있습니다. <a href ="https://support.microsoft.com/ko-kr/surface/서비스를-받을-수-있도록-surface를-준비하는-방법-e6fe1f6a-c516-0cd5-5a96-0377d82e7fc5"><u>서비스를 받을 수 있도록 Surface를 준비하는 방법</u></a> 도움을 받으세요. 동시에 안전상의 이유로 더 이상 장치를 사용해서는 안됩니다. 그런데 문제는 고온 작업 환경으로 인해 발생합니다. 기계가 그러한 환경에서 오랫동안 작동하면 쉽게 짜증이납니다. 필요한 경우 외부 냉각기를 사용하는 것이 좋습니다.</td>
+</tr>
+<tr>
+<td align="left">Q6</td>
+<td align="left">일부 펌웨어 업데이트를 받은 후 장치가 정상적으로 시작되지 않거나 Surface UEFI로 들어갈 수 없습니다.</td>
+<td align="left">일부 Surface Pro 4 및 Surface Book(1세대) 사용자가 문제를 보고했습니다. <br/><br/>1. Microsoft는 이 문제가 있는 장치를 무료로 수정하겠다고 발표했습니다. 그러나 개인 파일은 손실됩니다. <br/><br/> 2. 파일이 정말 중요한 경우 타사 서비스 제공업체를 찾아 제대로 작동하는 마더보드에 원래 SSD를 배치할 수 있습니다. Bitlocker를 활성화하는 데 사용한 경우 일반적으로 Microsoft 계정에 저장됩니다. <a target="_blank" rel="noopener" href="https://support.microsoft.com/ko-kr/windows/windows에서-bitlocker-복구-키-찾기-6b71ad27-0b89-ea08-f143-056f5ab347d6"><u>Windows에서 BitLocker 복구 키 찾기</u></a>를 참조하세요. <b>타사 서비스를 선택하면 문제에 대한 공식 보증을 잃게 됩니다.</b></td>
+</tr>
+<tr>
+<td align="left">Q7</td>
+<td align="left">내 Surface 펜의 상단 버튼이 작동하지 않지만 여전히 쓸 수 있습니다.</td>
+<td align="left">1. 이것은 아마도 블루투스 페어링 문제로 인해 발생할 수 있습니다. 설정 앱 –&gt; 장치 –&gt; Bluetooth로 이동합니다. 표시등이 깜박일 때까지 펜의 상단 버튼을 누른 다음 새 블루투스 장치를 추가합니다. 장치 목록에 펜이 표시됩니다.<br/><br/>2. 배터리가 부족합니다. 하나를 교체해 보십시오.</td>
+</tr>
+<tr>
+<td align="left">Q8</td>
+<td align="left">Surface 펜의 상단 버튼은 작동하지만 쓸 수 없습니다.</td>
+<td align="left">이 문제는 운영 체제 또는 장치 드라이버로 인해 발생할 수 있습니다. <br/><br/>1. 내 자습서 중 하나의 지침에 따라 드라이브를 다시 설치할 수 있습니다. <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/ko_KR/2022/07/31/SurfaceFirmwareUsage/"><u>Surface 사용 자습서 펌웨어 패키지</u></a>. <br/> 2. 그래도 작동하지 않으면 운영 체제를 다시 설치해 보십시오. <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/ko_KR/2022/07/25/SurfaceSystemRecovery/"><u> Microsoft Surface 복구의 궁극적인 자습서</u></a> . 기사의 <b>방법 3</b>을 따르세요. <br/><br/>3. 배터리가 부족합니다. 하나를 교체해 보십시오. <br/><br/>4. 모든 시도가 실패했다면 펜이 부러졌을 수 있습니다.</td>
+</tr>
+<tr>
+<td align="left">Q9</td>
+<td align="left">내 Surface Pro 7은 전원을 켤 때마다 부트로더 Microsoft 로고에 붙어 있고 강제로 종료하고 다시 부팅해야만 운영 체제로 들어갈 수 있습니다.</td>
+<td align="left">처음에는 Microsoft 로고가 항상 두 번 깜박이기 때문에 마더보드 문제로 인해 문제가 발생하는 줄 알았습니다. 시작 프로세스가 주로 마더보드에 달려 있다는 것은 모두 알고 있습니다. 그러나 이것은 실제로 소프트웨어 문제입니다. Surface Pro 7 장치는 Windows Update에서 최신 버전의 펌웨어를 받은 적이 있으며 그 이후로 장치가 잘 실행되었습니다. 여전히 동일한 문제가 발생하면 설정 앱에서 업데이트를 확인하세요. 그건 그렇고, 모든 Surface 장치에서 자동 업데이트 기능을 끄지 않는 것이 좋습니다.</td>
+</tr>
+<tr>
+<td align="left">Q10</td>
+<td align="left">내 Type Cover 가 작동하지 않습니다.</td>
+<td align="left">1. 평평한 곳에 놓아보세요. 많은 사용자가 다리에 키보드를 놓고 타이핑하는 것을 즐깁니다. 그러나 이것은 Surface Pro 및 Surface Go 사용자에게 재앙입니다. <br/><br/>2. Surface 바닥의 재료 핀이나 Type Cover 상단의 금색 손가락이 산화되었습니다. 약간의 알코올로 청소를 시도할 수 있습니다. <br/><br/> 3. 드라이버로 인해 문제가 발생할 수도 있습니다. 내 블로그 중 하나의 지침에 따라 다시 설치해 보십시오. <a target="_blank" rel="noopener" href="https://blog.lzj20021216.com/ko_KR/2022/07/31/SurfaceFirmwareUsage/"><u>Surface 펌웨어 패키지 사용 자습서</u></a>. <br/><br/> 4. 그래도 작동하지 않으면 키보드가 고장난 것일 수 있습니다.</td>
+</tr>
+<tr>
+<td align="left">Q11</td>
+<td align="left">Surface가 충전되지 않습니다.</td>
+<td align="left">1. 커넥터를 청소하십시오. <br/><br/> 2. Surface Book 장치의 경우 키보드에서 클립보드를 분리한 다음 커넥터를 클립보드 하단의 Surface Connect 포트에 몇 분 동안 똑바로 꽂을 수 있습니다. 충전이 시작되면 충전기를 제거하고 클립보드를 키보드에 부착합니다. 그런 다음 키보드를 충전기에 연결합니다.<br/><br/> 3. 몇 달 동안 장치를 사용하지 않았다면 배터리가 방전되었을 수 있습니다. 배터리를 교체해야 합니다. 장치가 아직 보증 기간 내에 있는 경우 교체 서비스가 무료입니다. <a href ="https://support.microsoft.com/ko-kr/surface/서비스를-받을-수-있도록-surface를-준비하는-방법-e6fe1f6a-c516-0cd5-5a96-0377d82e7fc5"><u>서비스를 받을 수 있도록 Surface를 준비하는 방법</u></a> .에서 추가 정보를 확인하세요. 그렇지 않은 경우 타사 서비스 공급자 또는 공식 Microsoft 교체 서비스를 통해 비용을 지불해야 합니다. <br/><br/> 4. 충전기를 새 것으로 교체하십시오. <br/><br/> 5. Surface UEFI에서 배터리 제한 기능을 한 번 활성화하고 배터리 비율이 예상대로 50%가 아닌 0%로 감소한 것을 발견했다면 걱정하지 마십시오. 벌레. 그냥 끄면 백분율이 다시 나타납니다. <br/> 추가: 전원 충전기의 Surface Connect에 있는 흰색 표시등이 깜박이고 Surface를 동시에 부팅할 수 없으면 마더보드에 문제가 있을 수 있습니다.</td>
+</tr>
+<tr>
+<td align="left">Q12</td>
+<td align="left">내 Surface Book에서 클립보드와 베이스 간의 연결이 안정적이지 않습니다.</td>
+<td align="left">이는 부분적으로 래치의 설계 결함으로 인해 발생합니다. 산화로 인해 발생하기도 합니다. 문제 제안: <br/><br/> 1. 기기를 사용하는 동안 테이블 표면에 큰 진동을 주거나 움직이지 마십시오. <br/><br/>2. 베이스에서 클립보드를 분리하는 빈도를 줄입니다. <br/><br/> 3. 베이스의 커넥터를 알코올로 청소합니다.</td>
+</tr>
+<tr>
+<td align="left">Q13</td>
+<td align="left">My Surface가 화면을 누르고 동시에 일부 원을 표시합니다.</td>
+<td align="left">이러한 상황을 <b>고스트 터치</b>라고 합니다. 내 Surface Book(1세대)에서 발생했던 문제입니다. 아래 솔루션 2는 내 경험을 기반으로 합니다. <br/><br/> 해결 방법 1: <br/>문제를 해결하는 가장 좋은 방법은 새 화면을 교체하는 것입니다. 를 방문하여 Microsoft에 도움을 요청하십시오: <a href ="https://support.microsoft.com/ko-kr/surface/서비스를-받을-수-있도록-surface를-준비하는-방법-e6fe1f6a-c516-0cd5-5a96-0377d82e7fc5"><u>서비스를 받을 수 있도록 Surface를 준비하는 방법</u></a> .보증이 만료된 경우 더 저렴한 가격으로 타사 서비스를 선택할 수도 있습니다. <br/> 화면 교체를 원하지 않고 일시적인 해결책이 있다면 여기에 해결책이 있습니다. <br/><br/> 해결 방법 2: <br/>문제가 발생했을 때 Surface 펜으로 화면을 클릭하면 즉시 해결됩니다. 문제가 다시 발생하면 다시 실행하십시오. 방법이 더 이상 작동하지 않으면 컴퓨터를 다시 시작하면 사라집니다. 그러나 때로는 2-3 번 다시 시작하여 해제해야 할 수도 있습니다.</td>
+</tr>
+</tbody></table>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/ko_KR/categories/Microsoft-Surface-%EB%8F%84%EC%9B%80%EB%A7%90-%EB%AC%B8%EC%84%9C/" class="category-chain-item">Microsoft Surface 도움말 문서</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/ko_KR/tags/Microsoft-Surafce/">#Microsoft Surafce</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>일반적인 Surface 하드웨어 문제 FAQ 모음</div>
+      <div>http://lzj20021216.github.io/ko_KR/2022/08/02/SurfaceHardwareIssuesFAQ/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>작가</div>
+          <div>Everett Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>게시일</div>
+          <div>2022년 8월 2일</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>라이센스</div>
+        <div>
+          
+            CC BY-SA 4.0
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/ko_KR/2022/07/31/SurfaceFirmwareUsage/" title="Microsoft Surface 펌웨어 패키지 사용 자습서">
+                        <span class="hidden-mobile">Microsoft Surface 펌웨어 패키지 사용 자습서</span>
+                        <span class="visible-mobile">다음</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.5.11/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"twikoo-commit-service-5afcb62dbe","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+              Fluid.plugins.imageCaption(imgSelector);
+              Fluid.plugins.fancyBox(imgSelector);
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;목차</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">검색</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">예어</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/ko_KR/js/events.js" ></script>
+<script  src="/ko_KR/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/ko_KR/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/ko_KR/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/ko_KR/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">블로그는 JavaScript 가 활성화된 상태에서 가장 잘 작동합니다.</div>
+  </noscript>
+</body>
+</html>
